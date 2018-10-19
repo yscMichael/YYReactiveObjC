@@ -1,0 +1,6 @@
+module Pods_YYReactiveObjC {
+  umbrella header "Pods-YYReactiveObjC-umbrella.h"
+
+  export *
+  module * { export * }
+}

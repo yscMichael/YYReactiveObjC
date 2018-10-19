@@ -17,11 +17,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"进入首个界面------------");
-
-    UIView *tempView = [[UIView alloc] initWithFrame:CGRectMake(0, 30, ScreenWidth, 50)];
-    tempView.backgroundColor = [UIColor redColor];
-    [self.view addSubview:tempView];
 }
 
 
