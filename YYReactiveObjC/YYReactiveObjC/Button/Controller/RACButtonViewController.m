@@ -7,7 +7,6 @@
 //
 
 #import "RACButtonViewController.h"
-#import <ReactiveObjC.h>
 
 @interface RACButtonViewController ()
 @property (nonatomic ,copy) NSString *firstText;

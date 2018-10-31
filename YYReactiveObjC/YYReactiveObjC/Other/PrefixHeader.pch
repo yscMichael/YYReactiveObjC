@@ -15,6 +15,7 @@
 
 //file
 #import "Masonry.h"
+#import <ReactiveObjC.h>
 #import "UIColor+Category.h"
 
 //弱引用
