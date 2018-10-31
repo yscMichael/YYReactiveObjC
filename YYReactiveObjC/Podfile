@@ -3,4 +3,6 @@ target "YYReactiveObjC" do
 #pod "ReactiveCocoa"
 #pod "ReactiveSwift"
 pod "ReactiveObjC"
+pod "Masonry"
+pod "IQKeyboardManager"
 end
