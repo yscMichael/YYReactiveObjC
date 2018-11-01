@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1160B4962189CFBF0018A512 /* RACBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1160B4952189CFBF0018A512 /* RACBasicViewController.m */; };
 		1160B49E2189D06C0018A512 /* RACBasicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1160B49C2189D06C0018A512 /* RACBasicViewController.xib */; };
+		11645577218B2498008C3470 /* YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11645576218B2498008C3470 /* YYModel.m */; };
 		116EB42521894385004C4862 /* YYMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 116EB42221894385004C4862 /* YYMainTableViewCell.xib */; };
 		116EB42621894385004C4862 /* YYMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 116EB42421894385004C4862 /* YYMainTableViewCell.m */; };
 		116EB4292189440E004C4862 /* RACButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 116EB4282189440E004C4862 /* RACButtonViewController.m */; };
@@ -45,6 +46,8 @@
 		1160B4942189CFBF0018A512 /* RACBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACBasicViewController.h; sourceTree = "<group>"; };
 		1160B4952189CFBF0018A512 /* RACBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACBasicViewController.m; sourceTree = "<group>"; };
 		1160B49C2189D06C0018A512 /* RACBasicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RACBasicViewController.xib; sourceTree = "<group>"; };
+		11645575218B2498008C3470 /* YYModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
+		11645576218B2498008C3470 /* YYModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYModel.m; sourceTree = "<group>"; };
 		116EB42221894385004C4862 /* YYMainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYMainTableViewCell.xib; sourceTree = "<group>"; };
 		116EB42321894385004C4862 /* YYMainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMainTableViewCell.h; sourceTree = "<group>"; };
 		116EB42421894385004C4862 /* YYMainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMainTableViewCell.m; sourceTree = "<group>"; };
@@ -112,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				1160B4972189CFC20018A512 /* Controller */,
+				11645574218B2465008C3470 /* Model */,
 			);
 			path = RACObserve;
 			sourceTree = "<group>";
@@ -124,6 +128,15 @@
 				1160B49C2189D06C0018A512 /* RACBasicViewController.xib */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		11645574218B2465008C3470 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11645575218B2498008C3470 /* YYModel.h */,
+				11645576218B2498008C3470 /* YYModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		116EB41F218942EA004C4862 /* Button */ = {
@@ -444,6 +457,7 @@
 				116EB42621894385004C4862 /* YYMainTableViewCell.m in Sources */,
 				1189CFF02179792C00E1CE5C /* YYAppDelegate.m in Sources */,
 				116EB42F21895073004C4862 /* UIColor+Category.m in Sources */,
+				11645577218B2498008C3470 /* YYModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

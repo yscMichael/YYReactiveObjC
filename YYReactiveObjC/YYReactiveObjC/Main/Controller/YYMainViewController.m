@@ -74,7 +74,7 @@
     {
 
         _dataSoure = [[NSMutableArray alloc]initWithObjects:
-                      @"基本数据类型监听",
+                      @"RACObserve用法",
                       @"UIButton",nil];
     }
     return _dataSoure;
