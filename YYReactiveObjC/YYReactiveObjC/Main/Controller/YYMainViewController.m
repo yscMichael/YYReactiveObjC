@@ -74,6 +74,7 @@
     {
 
         _dataSoure = [[NSMutableArray alloc]initWithObjects:
+                      @"基本数据类型监听",
                       @"UIButton",nil];
     }
     return _dataSoure;
@@ -84,6 +85,7 @@
     if (!_controllerSoure)
     {
         _controllerSoure = [[NSMutableArray alloc] initWithObjects:
+                            @"RACBasicViewController",
                             @"RACButtonViewController",nil];
     }
     return _controllerSoure;

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1160B4962189CFBF0018A512 /* RACBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1160B4952189CFBF0018A512 /* RACBasicViewController.m */; };
+		1160B49E2189D06C0018A512 /* RACBasicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1160B49C2189D06C0018A512 /* RACBasicViewController.xib */; };
 		116EB42521894385004C4862 /* YYMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 116EB42221894385004C4862 /* YYMainTableViewCell.xib */; };
 		116EB42621894385004C4862 /* YYMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 116EB42421894385004C4862 /* YYMainTableViewCell.m */; };
 		116EB4292189440E004C4862 /* RACButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 116EB4282189440E004C4862 /* RACButtonViewController.m */; };
@@ -40,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1160B4942189CFBF0018A512 /* RACBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACBasicViewController.h; sourceTree = "<group>"; };
+		1160B4952189CFBF0018A512 /* RACBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACBasicViewController.m; sourceTree = "<group>"; };
+		1160B49C2189D06C0018A512 /* RACBasicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RACBasicViewController.xib; sourceTree = "<group>"; };
 		116EB42221894385004C4862 /* YYMainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYMainTableViewCell.xib; sourceTree = "<group>"; };
 		116EB42321894385004C4862 /* YYMainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMainTableViewCell.h; sourceTree = "<group>"; };
 		116EB42421894385004C4862 /* YYMainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMainTableViewCell.m; sourceTree = "<group>"; };
@@ -101,6 +106,24 @@
 				3C91AA7C6FD9EC98F1911019 /* libPods-YYReactiveObjC.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1160B4932189CF980018A512 /* RACObserve */ = {
+			isa = PBXGroup;
+			children = (
+				1160B4972189CFC20018A512 /* Controller */,
+			);
+			path = RACObserve;
+			sourceTree = "<group>";
+		};
+		1160B4972189CFC20018A512 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1160B4942189CFBF0018A512 /* RACBasicViewController.h */,
+				1160B4952189CFBF0018A512 /* RACBasicViewController.m */,
+				1160B49C2189D06C0018A512 /* RACBasicViewController.xib */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		116EB41F218942EA004C4862 /* Button */ = {
@@ -176,6 +199,7 @@
 				116EB42C2189504D004C4862 /* UIColor分类 */,
 				1189D0202179794700E1CE5C /* AppDelegate */,
 				1189D0212179795F00E1CE5C /* Main */,
+				1160B4932189CF980018A512 /* RACObserve */,
 				116EB41F218942EA004C4862 /* Button */,
 				1189D0222179797000E1CE5C /* Other */,
 			);
@@ -348,6 +372,7 @@
 				1189CFFB2179792E00E1CE5C /* LaunchScreen.storyboard in Resources */,
 				1189CFF82179792E00E1CE5C /* Assets.xcassets in Resources */,
 				116EB42521894385004C4862 /* YYMainTableViewCell.xib in Resources */,
+				1160B49E2189D06C0018A512 /* RACBasicViewController.xib in Resources */,
 				1189CFF62179792C00E1CE5C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +440,7 @@
 				116EB4292189440E004C4862 /* RACButtonViewController.m in Sources */,
 				1189CFF32179792C00E1CE5C /* YYMainViewController.m in Sources */,
 				1189CFFE2179792E00E1CE5C /* main.m in Sources */,
+				1160B4962189CFBF0018A512 /* RACBasicViewController.m in Sources */,
 				116EB42621894385004C4862 /* YYMainTableViewCell.m in Sources */,
 				1189CFF02179792C00E1CE5C /* YYAppDelegate.m in Sources */,
 				116EB42F21895073004C4862 /* UIColor+Category.m in Sources */,
@@ -592,7 +618,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YYReactiveObjC/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = YYReactiveObjC/Other/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.winwayworld.YYReactiveObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -609,7 +638,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YYReactiveObjC/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = YYReactiveObjC/Other/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.winwayworld.YYReactiveObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -623,7 +655,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59PVTAC458;
 				INFOPLIST_FILE = YYReactiveObjCTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.winwayworld.YYReactiveObjCTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -638,7 +674,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59PVTAC458;
 				INFOPLIST_FILE = YYReactiveObjCTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.winwayworld.YYReactiveObjCTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -652,7 +692,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59PVTAC458;
 				INFOPLIST_FILE = YYReactiveObjCUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.winwayworld.YYReactiveObjCUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -666,7 +710,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59PVTAC458;
 				INFOPLIST_FILE = YYReactiveObjCUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.winwayworld.YYReactiveObjCUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
