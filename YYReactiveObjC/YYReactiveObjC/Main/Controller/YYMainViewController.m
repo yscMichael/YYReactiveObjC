@@ -75,6 +75,7 @@
 
         _dataSoure = [[NSMutableArray alloc]initWithObjects:
                       @"RACObserve用法",
+                      @"RACSignal用法",
                       @"UIButton",nil];
     }
     return _dataSoure;
@@ -86,6 +87,7 @@
     {
         _controllerSoure = [[NSMutableArray alloc] initWithObjects:
                             @"RACBasicViewController",
+                            @"RACSignalViewController",
                             @"RACButtonViewController",nil];
     }
     return _controllerSoure;
