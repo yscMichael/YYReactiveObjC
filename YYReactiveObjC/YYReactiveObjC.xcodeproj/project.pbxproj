@@ -12,6 +12,8 @@
 		11645577218B2498008C3470 /* YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11645576218B2498008C3470 /* YYModel.m */; };
 		1164557E218B2824008C3470 /* RACSignalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1164557C218B2824008C3470 /* RACSignalViewController.m */; };
 		1164557F218B2824008C3470 /* RACSignalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1164557D218B2824008C3470 /* RACSignalViewController.xib */; };
+		1165613F218C17BB00DA17A6 /* RACCommandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1165613D218C17BB00DA17A6 /* RACCommandViewController.m */; };
+		11656140218C17BB00DA17A6 /* RACCommandViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1165613E218C17BB00DA17A6 /* RACCommandViewController.xib */; };
 		116EB42521894385004C4862 /* YYMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 116EB42221894385004C4862 /* YYMainTableViewCell.xib */; };
 		116EB42621894385004C4862 /* YYMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 116EB42421894385004C4862 /* YYMainTableViewCell.m */; };
 		116EB4292189440E004C4862 /* RACButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 116EB4282189440E004C4862 /* RACButtonViewController.m */; };
@@ -53,6 +55,9 @@
 		1164557B218B2824008C3470 /* RACSignalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACSignalViewController.h; sourceTree = "<group>"; };
 		1164557C218B2824008C3470 /* RACSignalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACSignalViewController.m; sourceTree = "<group>"; };
 		1164557D218B2824008C3470 /* RACSignalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RACSignalViewController.xib; sourceTree = "<group>"; };
+		1165613C218C17BB00DA17A6 /* RACCommandViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACCommandViewController.h; sourceTree = "<group>"; };
+		1165613D218C17BB00DA17A6 /* RACCommandViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACCommandViewController.m; sourceTree = "<group>"; };
+		1165613E218C17BB00DA17A6 /* RACCommandViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RACCommandViewController.xib; sourceTree = "<group>"; };
 		116EB42221894385004C4862 /* YYMainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYMainTableViewCell.xib; sourceTree = "<group>"; };
 		116EB42321894385004C4862 /* YYMainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMainTableViewCell.h; sourceTree = "<group>"; };
 		116EB42421894385004C4862 /* YYMainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMainTableViewCell.m; sourceTree = "<group>"; };
@@ -162,6 +167,24 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		1165613A218C179000DA17A6 /* RACCommand */ = {
+			isa = PBXGroup;
+			children = (
+				1165613B218C17A600DA17A6 /* Controller */,
+			);
+			path = RACCommand;
+			sourceTree = "<group>";
+		};
+		1165613B218C17A600DA17A6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1165613C218C17BB00DA17A6 /* RACCommandViewController.h */,
+				1165613D218C17BB00DA17A6 /* RACCommandViewController.m */,
+				1165613E218C17BB00DA17A6 /* RACCommandViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		116EB41F218942EA004C4862 /* Button */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +260,7 @@
 				1189D0212179795F00E1CE5C /* Main */,
 				1160B4932189CF980018A512 /* RACObserve */,
 				11645578218B27D7008C3470 /* RACSignal和RAC宏 */,
+				1165613A218C179000DA17A6 /* RACCommand */,
 				116EB41F218942EA004C4862 /* Button */,
 				1189D0222179797000E1CE5C /* Other */,
 			);
@@ -410,6 +434,7 @@
 				1164557F218B2824008C3470 /* RACSignalViewController.xib in Resources */,
 				1189CFF82179792E00E1CE5C /* Assets.xcassets in Resources */,
 				116EB42521894385004C4862 /* YYMainTableViewCell.xib in Resources */,
+				11656140218C17BB00DA17A6 /* RACCommandViewController.xib in Resources */,
 				1160B49E2189D06C0018A512 /* RACBasicViewController.xib in Resources */,
 				1189CFF62179792C00E1CE5C /* Main.storyboard in Resources */,
 			);
@@ -480,6 +505,7 @@
 				1189CFFE2179792E00E1CE5C /* main.m in Sources */,
 				1160B4962189CFBF0018A512 /* RACBasicViewController.m in Sources */,
 				1164557E218B2824008C3470 /* RACSignalViewController.m in Sources */,
+				1165613F218C17BB00DA17A6 /* RACCommandViewController.m in Sources */,
 				116EB42621894385004C4862 /* YYMainTableViewCell.m in Sources */,
 				1189CFF02179792C00E1CE5C /* YYAppDelegate.m in Sources */,
 				116EB42F21895073004C4862 /* UIColor+Category.m in Sources */,
