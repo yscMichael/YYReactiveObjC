@@ -25,7 +25,12 @@
 {
     [super viewDidLoad];
     //[self simpleRAC];
-    [self advancedRAC];
+//    [self advancedRAC];
+
+    self.button.rac_command = [[RACCommand alloc] initWithSignalBlock:^(id _) {
+        NSLog(@"button was pressed!");
+        return [RACSignal empty];
+    }];
 }
 
 #pragma mark - RAC简单实用

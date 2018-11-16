@@ -26,6 +26,7 @@
 		1189CFFE2179792E00E1CE5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1189CFFD2179792E00E1CE5C /* main.m */; };
 		1189D0082179792E00E1CE5C /* YYReactiveObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1189D0072179792E00E1CE5C /* YYReactiveObjCTests.m */; };
 		1189D0132179792E00E1CE5C /* YYReactiveObjCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1189D0122179792E00E1CE5C /* YYReactiveObjCUITests.m */; };
+		11D0131C219E530600B2ABB2 /* YYRACSignalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0131B219E530600B2ABB2 /* YYRACSignalController.m */; };
 		8559295589F86CCF29D9C55A /* libPods-YYReactiveObjC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C91AA7C6FD9EC98F1911019 /* libPods-YYReactiveObjC.a */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,8 @@
 		1189D0122179792E00E1CE5C /* YYReactiveObjCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYReactiveObjCUITests.m; sourceTree = "<group>"; };
 		1189D0142179792E00E1CE5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1189D02321797A7400E1CE5C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		11D0131A219E530600B2ABB2 /* YYRACSignalController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRACSignalController.h; sourceTree = "<group>"; };
+		11D0131B219E530600B2ABB2 /* YYRACSignalController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRACSignalController.m; sourceTree = "<group>"; };
 		3C91AA7C6FD9EC98F1911019 /* libPods-YYReactiveObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YYReactiveObjC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DDAFA490FB48233C3A65A1 /* Pods-YYReactiveObjC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYReactiveObjC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YYReactiveObjC/Pods-YYReactiveObjC.debug.xcconfig"; sourceTree = "<group>"; };
 		DD23A3C831863775E923509A /* Pods-YYReactiveObjC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYReactiveObjC.release.xcconfig"; path = "Pods/Target Support Files/Pods-YYReactiveObjC/Pods-YYReactiveObjC.release.xcconfig"; sourceTree = "<group>"; };
@@ -258,6 +261,7 @@
 				116EB42C2189504D004C4862 /* UIColor分类 */,
 				1189D0202179794700E1CE5C /* AppDelegate */,
 				1189D0212179795F00E1CE5C /* Main */,
+				11D01317219E52C900B2ABB2 /* RACSignal */,
 				1160B4932189CF980018A512 /* RACObserve */,
 				11645578218B27D7008C3470 /* RACSignal和RAC宏 */,
 				1165613A218C179000DA17A6 /* RACCommand */,
@@ -314,6 +318,23 @@
 				1189D02321797A7400E1CE5C /* PrefixHeader.pch */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		11D01317219E52C900B2ABB2 /* RACSignal */ = {
+			isa = PBXGroup;
+			children = (
+				11D01318219E52DB00B2ABB2 /* Controller */,
+			);
+			path = RACSignal;
+			sourceTree = "<group>";
+		};
+		11D01318219E52DB00B2ABB2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11D0131A219E530600B2ABB2 /* YYRACSignalController.h */,
+				11D0131B219E530600B2ABB2 /* YYRACSignalController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		A8A406735D6EBFC7A92497D5 /* Pods */ = {
@@ -506,6 +527,7 @@
 				1160B4962189CFBF0018A512 /* RACBasicViewController.m in Sources */,
 				1164557E218B2824008C3470 /* RACSignalViewController.m in Sources */,
 				1165613F218C17BB00DA17A6 /* RACCommandViewController.m in Sources */,
+				11D0131C219E530600B2ABB2 /* YYRACSignalController.m in Sources */,
 				116EB42621894385004C4862 /* YYMainTableViewCell.m in Sources */,
 				1189CFF02179792C00E1CE5C /* YYAppDelegate.m in Sources */,
 				116EB42F21895073004C4862 /* UIColor+Category.m in Sources */,
