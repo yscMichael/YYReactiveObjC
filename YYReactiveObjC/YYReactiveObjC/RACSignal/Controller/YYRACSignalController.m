@@ -38,8 +38,8 @@
     //didSubscribe会成为signal的一个属性
     RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
         NSLog(@"创建信号量");
-        //3、发布信息
         //每当有订阅者订阅信号(执行subscribeNext)、就会调用当前block(didSubscribe)、否则永远不执行
+        //3、发布信息
         [subscriber sendNext:@"I'm send next data"];//一定会执行父类的方法
         NSLog(@"那我啥时候运行");
 

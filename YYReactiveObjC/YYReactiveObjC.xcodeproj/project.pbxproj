@@ -27,6 +27,8 @@
 		1189D0082179792E00E1CE5C /* YYReactiveObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1189D0072179792E00E1CE5C /* YYReactiveObjCTests.m */; };
 		1189D0132179792E00E1CE5C /* YYReactiveObjCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1189D0122179792E00E1CE5C /* YYReactiveObjCUITests.m */; };
 		11D0131C219E530600B2ABB2 /* YYRACSignalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0131B219E530600B2ABB2 /* YYRACSignalController.m */; };
+		11F12F6521A8154600073089 /* RACDisposableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F12F6321A8154600073089 /* RACDisposableController.m */; };
+		11F12F6621A8154600073089 /* RACDisposableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11F12F6421A8154600073089 /* RACDisposableController.xib */; };
 		8559295589F86CCF29D9C55A /* libPods-YYReactiveObjC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C91AA7C6FD9EC98F1911019 /* libPods-YYReactiveObjC.a */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +87,9 @@
 		1189D02321797A7400E1CE5C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		11D0131A219E530600B2ABB2 /* YYRACSignalController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRACSignalController.h; sourceTree = "<group>"; };
 		11D0131B219E530600B2ABB2 /* YYRACSignalController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRACSignalController.m; sourceTree = "<group>"; };
+		11F12F6221A8154600073089 /* RACDisposableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACDisposableController.h; sourceTree = "<group>"; };
+		11F12F6321A8154600073089 /* RACDisposableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACDisposableController.m; sourceTree = "<group>"; };
+		11F12F6421A8154600073089 /* RACDisposableController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RACDisposableController.xib; sourceTree = "<group>"; };
 		3C91AA7C6FD9EC98F1911019 /* libPods-YYReactiveObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YYReactiveObjC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DDAFA490FB48233C3A65A1 /* Pods-YYReactiveObjC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYReactiveObjC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YYReactiveObjC/Pods-YYReactiveObjC.debug.xcconfig"; sourceTree = "<group>"; };
 		DD23A3C831863775E923509A /* Pods-YYReactiveObjC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYReactiveObjC.release.xcconfig"; path = "Pods/Target Support Files/Pods-YYReactiveObjC/Pods-YYReactiveObjC.release.xcconfig"; sourceTree = "<group>"; };
@@ -262,6 +267,7 @@
 				1189D0202179794700E1CE5C /* AppDelegate */,
 				1189D0212179795F00E1CE5C /* Main */,
 				11D01317219E52C900B2ABB2 /* RACSignal */,
+				11F12F6021A8151A00073089 /* RACDisposable */,
 				1160B4932189CF980018A512 /* RACObserve */,
 				11645578218B27D7008C3470 /* RACSignal和RAC宏 */,
 				1165613A218C179000DA17A6 /* RACCommand */,
@@ -333,6 +339,24 @@
 			children = (
 				11D0131A219E530600B2ABB2 /* YYRACSignalController.h */,
 				11D0131B219E530600B2ABB2 /* YYRACSignalController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		11F12F6021A8151A00073089 /* RACDisposable */ = {
+			isa = PBXGroup;
+			children = (
+				11F12F6121A8152400073089 /* Controller */,
+			);
+			path = RACDisposable;
+			sourceTree = "<group>";
+		};
+		11F12F6121A8152400073089 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11F12F6221A8154600073089 /* RACDisposableController.h */,
+				11F12F6321A8154600073089 /* RACDisposableController.m */,
+				11F12F6421A8154600073089 /* RACDisposableController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -455,6 +479,7 @@
 				1164557F218B2824008C3470 /* RACSignalViewController.xib in Resources */,
 				1189CFF82179792E00E1CE5C /* Assets.xcassets in Resources */,
 				116EB42521894385004C4862 /* YYMainTableViewCell.xib in Resources */,
+				11F12F6621A8154600073089 /* RACDisposableController.xib in Resources */,
 				11656140218C17BB00DA17A6 /* RACCommandViewController.xib in Resources */,
 				1160B49E2189D06C0018A512 /* RACBasicViewController.xib in Resources */,
 				1189CFF62179792C00E1CE5C /* Main.storyboard in Resources */,
@@ -521,6 +546,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11F12F6521A8154600073089 /* RACDisposableController.m in Sources */,
 				116EB4292189440E004C4862 /* RACButtonViewController.m in Sources */,
 				1189CFF32179792C00E1CE5C /* YYMainViewController.m in Sources */,
 				1189CFFE2179792E00E1CE5C /* main.m in Sources */,

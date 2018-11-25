@@ -24,8 +24,8 @@
 {
     [super viewDidLoad];
     //[self monitorTextFieldChange];
-    //[self monitorTextFieldChangeAndFilter];
-    [self monitorYYModelPassword];
+    [self monitorTextFieldChangeAndFilter];
+//    [self monitorYYModelPassword];
 }
 
 #pragma mark - 监听username属性变化
