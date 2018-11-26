@@ -26,6 +26,8 @@
 		1189CFFE2179792E00E1CE5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1189CFFD2179792E00E1CE5C /* main.m */; };
 		1189D0082179792E00E1CE5C /* YYReactiveObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1189D0072179792E00E1CE5C /* YYReactiveObjCTests.m */; };
 		1189D0132179792E00E1CE5C /* YYReactiveObjCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1189D0122179792E00E1CE5C /* YYReactiveObjCUITests.m */; };
+		11A29AEC21AA9FF90082AC33 /* YYBlockBasicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A29AEB21AA9FF90082AC33 /* YYBlockBasicController.m */; };
+		11A29AF021AAA2F10082AC33 /* YYBlockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A29AEF21AAA2F10082AC33 /* YYBlockModel.m */; };
 		11D0131C219E530600B2ABB2 /* YYRACSignalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0131B219E530600B2ABB2 /* YYRACSignalController.m */; };
 		11F12F6521A8154600073089 /* RACDisposableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F12F6321A8154600073089 /* RACDisposableController.m */; };
 		11F12F6621A8154600073089 /* RACDisposableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11F12F6421A8154600073089 /* RACDisposableController.xib */; };
@@ -85,6 +87,10 @@
 		1189D0122179792E00E1CE5C /* YYReactiveObjCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYReactiveObjCUITests.m; sourceTree = "<group>"; };
 		1189D0142179792E00E1CE5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1189D02321797A7400E1CE5C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		11A29AEA21AA9FF90082AC33 /* YYBlockBasicController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYBlockBasicController.h; sourceTree = "<group>"; };
+		11A29AEB21AA9FF90082AC33 /* YYBlockBasicController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYBlockBasicController.m; sourceTree = "<group>"; };
+		11A29AEE21AAA2F10082AC33 /* YYBlockModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYBlockModel.h; sourceTree = "<group>"; };
+		11A29AEF21AAA2F10082AC33 /* YYBlockModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYBlockModel.m; sourceTree = "<group>"; };
 		11D0131A219E530600B2ABB2 /* YYRACSignalController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRACSignalController.h; sourceTree = "<group>"; };
 		11D0131B219E530600B2ABB2 /* YYRACSignalController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRACSignalController.m; sourceTree = "<group>"; };
 		11F12F6221A8154600073089 /* RACDisposableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACDisposableController.h; sourceTree = "<group>"; };
@@ -266,6 +272,7 @@
 				116EB42C2189504D004C4862 /* UIColor分类 */,
 				1189D0202179794700E1CE5C /* AppDelegate */,
 				1189D0212179795F00E1CE5C /* Main */,
+				11A29AE821AA9FC60082AC33 /* Block基础知识 */,
 				11D01317219E52C900B2ABB2 /* RACSignal */,
 				11F12F6021A8151A00073089 /* RACDisposable */,
 				1160B4932189CF980018A512 /* RACObserve */,
@@ -324,6 +331,33 @@
 				1189D02321797A7400E1CE5C /* PrefixHeader.pch */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		11A29AE821AA9FC60082AC33 /* Block基础知识 */ = {
+			isa = PBXGroup;
+			children = (
+				11A29AE921AA9FDB0082AC33 /* Controller */,
+				11A29AED21AAA2D90082AC33 /* Model */,
+			);
+			path = "Block基础知识";
+			sourceTree = "<group>";
+		};
+		11A29AE921AA9FDB0082AC33 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11A29AEA21AA9FF90082AC33 /* YYBlockBasicController.h */,
+				11A29AEB21AA9FF90082AC33 /* YYBlockBasicController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		11A29AED21AAA2D90082AC33 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11A29AEE21AAA2F10082AC33 /* YYBlockModel.h */,
+				11A29AEF21AAA2F10082AC33 /* YYBlockModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		11D01317219E52C900B2ABB2 /* RACSignal */ = {
@@ -549,7 +583,9 @@
 				11F12F6521A8154600073089 /* RACDisposableController.m in Sources */,
 				116EB4292189440E004C4862 /* RACButtonViewController.m in Sources */,
 				1189CFF32179792C00E1CE5C /* YYMainViewController.m in Sources */,
+				11A29AEC21AA9FF90082AC33 /* YYBlockBasicController.m in Sources */,
 				1189CFFE2179792E00E1CE5C /* main.m in Sources */,
+				11A29AF021AAA2F10082AC33 /* YYBlockModel.m in Sources */,
 				1160B4962189CFBF0018A512 /* RACBasicViewController.m in Sources */,
 				1164557E218B2824008C3470 /* RACSignalViewController.m in Sources */,
 				1165613F218C17BB00DA17A6 /* RACCommandViewController.m in Sources */,

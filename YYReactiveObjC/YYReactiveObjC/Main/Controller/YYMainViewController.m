@@ -74,6 +74,7 @@
     {
 
         _dataSoure = [[NSMutableArray alloc]initWithObjects:
+                      @"Block基础知识",
                       @"RACSignal用法",
                       @"RACObserve用法",
                       @"RACSignal用法",
@@ -87,6 +88,7 @@
     if (!_controllerSoure)
     {
         _controllerSoure = [[NSMutableArray alloc] initWithObjects:
+                            @"YYBlockBasicController",
                             @"YYRACSignalController",
                             @"RACBasicViewController",
                             @"RACSignalViewController",
