@@ -9,5 +9,16 @@
 #import "YYBlockModel.h"
 
 @implementation YYBlockModel
-
+//吃饭
+- (NSString *)eat
+{
+    return @"吃饭";
+}
+//喝
+- (void(^)(NSString *string))drink
+{
+    return ^(NSString *string){
+        NSLog(@"返回值是block = %@",string);
+    };
+}
 @end

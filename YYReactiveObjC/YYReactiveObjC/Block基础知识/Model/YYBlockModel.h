@@ -11,5 +11,6 @@
 @interface YYBlockModel : NSObject
 //吃饭
 - (NSString *)eat;
-
+//喝
+- (void(^)(NSString *string))drink;
 @end
