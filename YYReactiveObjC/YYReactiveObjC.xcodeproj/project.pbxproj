@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1125689321AC49C50043A0C5 /* YYChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1125689221AC49C50043A0C5 /* YYChainViewController.m */; };
+		1125689721AC4D220043A0C5 /* YYCalculateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1125689621AC4D220043A0C5 /* YYCalculateModel.m */; };
 		1160B4962189CFBF0018A512 /* RACBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1160B4952189CFBF0018A512 /* RACBasicViewController.m */; };
 		1160B49E2189D06C0018A512 /* RACBasicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1160B49C2189D06C0018A512 /* RACBasicViewController.xib */; };
 		11645577218B2498008C3470 /* YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11645576218B2498008C3470 /* YYModel.m */; };
@@ -52,6 +54,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1125689121AC49C50043A0C5 /* YYChainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYChainViewController.h; sourceTree = "<group>"; };
+		1125689221AC49C50043A0C5 /* YYChainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYChainViewController.m; sourceTree = "<group>"; };
+		1125689521AC4D220043A0C5 /* YYCalculateModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYCalculateModel.h; sourceTree = "<group>"; };
+		1125689621AC4D220043A0C5 /* YYCalculateModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYCalculateModel.m; sourceTree = "<group>"; };
 		1160B4942189CFBF0018A512 /* RACBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACBasicViewController.h; sourceTree = "<group>"; };
 		1160B4952189CFBF0018A512 /* RACBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACBasicViewController.m; sourceTree = "<group>"; };
 		1160B49C2189D06C0018A512 /* RACBasicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RACBasicViewController.xib; sourceTree = "<group>"; };
@@ -133,6 +139,33 @@
 				3C91AA7C6FD9EC98F1911019 /* libPods-YYReactiveObjC.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1125688F21AC49300043A0C5 /* 链式编程思想 */ = {
+			isa = PBXGroup;
+			children = (
+				1125689021AC49420043A0C5 /* Controller */,
+				1125689421AC4D010043A0C5 /* Model */,
+			);
+			path = "链式编程思想";
+			sourceTree = "<group>";
+		};
+		1125689021AC49420043A0C5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1125689121AC49C50043A0C5 /* YYChainViewController.h */,
+				1125689221AC49C50043A0C5 /* YYChainViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1125689421AC4D010043A0C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1125689521AC4D220043A0C5 /* YYCalculateModel.h */,
+				1125689621AC4D220043A0C5 /* YYCalculateModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		1160B4932189CF980018A512 /* RACObserve */ = {
@@ -338,6 +371,7 @@
 			children = (
 				11A29AE921AA9FDB0082AC33 /* Controller */,
 				11A29AED21AAA2D90082AC33 /* Model */,
+				1125688F21AC49300043A0C5 /* 链式编程思想 */,
 			);
 			path = "Block基础知识";
 			sourceTree = "<group>";
@@ -590,9 +624,11 @@
 				1164557E218B2824008C3470 /* RACSignalViewController.m in Sources */,
 				1165613F218C17BB00DA17A6 /* RACCommandViewController.m in Sources */,
 				11D0131C219E530600B2ABB2 /* YYRACSignalController.m in Sources */,
+				1125689321AC49C50043A0C5 /* YYChainViewController.m in Sources */,
 				116EB42621894385004C4862 /* YYMainTableViewCell.m in Sources */,
 				1189CFF02179792C00E1CE5C /* YYAppDelegate.m in Sources */,
 				116EB42F21895073004C4862 /* UIColor+Category.m in Sources */,
+				1125689721AC4D220043A0C5 /* YYCalculateModel.m in Sources */,
 				11645577218B2498008C3470 /* YYModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
