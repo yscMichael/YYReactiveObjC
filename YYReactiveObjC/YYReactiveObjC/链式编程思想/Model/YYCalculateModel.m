@@ -9,5 +9,12 @@
 #import "YYCalculateModel.h"
 
 @implementation YYCalculateModel
-
+//加法
+- (YYCalculateModel *(^)(int))add
+{
+    return ^YYCalculateModel *(int value){
+        self.result += value;//计算结果
+        return self;//返回自身
+    };
+}
 @end

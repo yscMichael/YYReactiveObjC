@@ -9,5 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface YYCalculateModel : NSObject
-
+//计算结果
+@property (nonatomic,assign) int result;
+//加法
+- (YYCalculateModel *(^)(int))add;
 @end
