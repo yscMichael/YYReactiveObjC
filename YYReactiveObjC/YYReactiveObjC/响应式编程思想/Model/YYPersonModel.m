@@ -12,6 +12,6 @@
 - (void)setName:(NSString *)name
 {
     _name = name;
-    NSLog(@"调用set方法了");
+    NSLog(@"调用YYPersonModel---set方法了");
 }
 @end
