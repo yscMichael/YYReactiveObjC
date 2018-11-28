@@ -10,6 +10,11 @@
 		1125689321AC49C50043A0C5 /* YYChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1125689221AC49C50043A0C5 /* YYChainViewController.m */; };
 		1125689721AC4D220043A0C5 /* YYCalculateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1125689621AC4D220043A0C5 /* YYCalculateModel.m */; };
 		1126C66821AD8C7700DA5AB3 /* NSObject+YYCalculateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1126C66721AD8C7700DA5AB3 /* NSObject+YYCalculateModel.m */; };
+		1126C66D21AD8F8E00DA5AB3 /* YYChainAdvancedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1126C66C21AD8F8E00DA5AB3 /* YYChainAdvancedController.m */; };
+		1126C67321AD906100DA5AB3 /* YYResponsiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1126C67221AD906100DA5AB3 /* YYResponsiveViewController.m */; };
+		1126C67721AD911300DA5AB3 /* YYPersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1126C67621AD911300DA5AB3 /* YYPersonModel.m */; };
+		1126C67D21AD974F00DA5AB3 /* YYPersonModel+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 1126C67C21AD974F00DA5AB3 /* YYPersonModel+Category.m */; };
+		1126C68021AD983B00DA5AB3 /* YYPersonSonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1126C67F21AD983B00DA5AB3 /* YYPersonSonModel.m */; };
 		1160B4962189CFBF0018A512 /* RACBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1160B4952189CFBF0018A512 /* RACBasicViewController.m */; };
 		1160B49E2189D06C0018A512 /* RACBasicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1160B49C2189D06C0018A512 /* RACBasicViewController.xib */; };
 		11645577218B2498008C3470 /* YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11645576218B2498008C3470 /* YYModel.m */; };
@@ -61,6 +66,16 @@
 		1125689621AC4D220043A0C5 /* YYCalculateModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYCalculateModel.m; sourceTree = "<group>"; };
 		1126C66621AD8C7700DA5AB3 /* NSObject+YYCalculateModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYCalculateModel.h"; sourceTree = "<group>"; };
 		1126C66721AD8C7700DA5AB3 /* NSObject+YYCalculateModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYCalculateModel.m"; sourceTree = "<group>"; };
+		1126C66B21AD8F8E00DA5AB3 /* YYChainAdvancedController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYChainAdvancedController.h; sourceTree = "<group>"; };
+		1126C66C21AD8F8E00DA5AB3 /* YYChainAdvancedController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYChainAdvancedController.m; sourceTree = "<group>"; };
+		1126C67121AD906100DA5AB3 /* YYResponsiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYResponsiveViewController.h; sourceTree = "<group>"; };
+		1126C67221AD906100DA5AB3 /* YYResponsiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYResponsiveViewController.m; sourceTree = "<group>"; };
+		1126C67521AD911300DA5AB3 /* YYPersonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYPersonModel.h; sourceTree = "<group>"; };
+		1126C67621AD911300DA5AB3 /* YYPersonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYPersonModel.m; sourceTree = "<group>"; };
+		1126C67B21AD974F00DA5AB3 /* YYPersonModel+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YYPersonModel+Category.h"; sourceTree = "<group>"; };
+		1126C67C21AD974F00DA5AB3 /* YYPersonModel+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YYPersonModel+Category.m"; sourceTree = "<group>"; };
+		1126C67E21AD983B00DA5AB3 /* YYPersonSonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYPersonSonModel.h; sourceTree = "<group>"; };
+		1126C67F21AD983B00DA5AB3 /* YYPersonSonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYPersonSonModel.m; sourceTree = "<group>"; };
 		1160B4942189CFBF0018A512 /* RACBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACBasicViewController.h; sourceTree = "<group>"; };
 		1160B4952189CFBF0018A512 /* RACBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACBasicViewController.m; sourceTree = "<group>"; };
 		1160B49C2189D06C0018A512 /* RACBasicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RACBasicViewController.xib; sourceTree = "<group>"; };
@@ -179,6 +194,54 @@
 				1126C66721AD8C7700DA5AB3 /* NSObject+YYCalculateModel.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		1126C66921AD8E9000DA5AB3 /* 链式编程进阶 */ = {
+			isa = PBXGroup;
+			children = (
+				1126C66A21AD8EA300DA5AB3 /* Controller */,
+			);
+			path = "链式编程进阶";
+			sourceTree = "<group>";
+		};
+		1126C66A21AD8EA300DA5AB3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1126C66B21AD8F8E00DA5AB3 /* YYChainAdvancedController.h */,
+				1126C66C21AD8F8E00DA5AB3 /* YYChainAdvancedController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1126C66F21AD900A00DA5AB3 /* 响应式编程思想 */ = {
+			isa = PBXGroup;
+			children = (
+				1126C67021AD901A00DA5AB3 /* Controller */,
+				1126C67421AD90FE00DA5AB3 /* Model */,
+			);
+			path = "响应式编程思想";
+			sourceTree = "<group>";
+		};
+		1126C67021AD901A00DA5AB3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1126C67121AD906100DA5AB3 /* YYResponsiveViewController.h */,
+				1126C67221AD906100DA5AB3 /* YYResponsiveViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1126C67421AD90FE00DA5AB3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1126C67B21AD974F00DA5AB3 /* YYPersonModel+Category.h */,
+				1126C67C21AD974F00DA5AB3 /* YYPersonModel+Category.m */,
+				1126C67521AD911300DA5AB3 /* YYPersonModel.h */,
+				1126C67621AD911300DA5AB3 /* YYPersonModel.m */,
+				1126C67E21AD983B00DA5AB3 /* YYPersonSonModel.h */,
+				1126C67F21AD983B00DA5AB3 /* YYPersonSonModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		1160B4932189CF980018A512 /* RACObserve */ = {
@@ -320,6 +383,8 @@
 				1189D0212179795F00E1CE5C /* Main */,
 				11A29AE821AA9FC60082AC33 /* Block基础知识 */,
 				1125688F21AC49300043A0C5 /* 链式编程思想 */,
+				1126C66921AD8E9000DA5AB3 /* 链式编程进阶 */,
+				1126C66F21AD900A00DA5AB3 /* 响应式编程思想 */,
 				11D01317219E52C900B2ABB2 /* RACSignal */,
 				11F12F6021A8151A00073089 /* RACDisposable */,
 				1160B4932189CF980018A512 /* RACObserve */,
@@ -631,17 +696,22 @@
 				116EB4292189440E004C4862 /* RACButtonViewController.m in Sources */,
 				1189CFF32179792C00E1CE5C /* YYMainViewController.m in Sources */,
 				11A29AEC21AA9FF90082AC33 /* YYBlockBasicController.m in Sources */,
+				1126C67D21AD974F00DA5AB3 /* YYPersonModel+Category.m in Sources */,
 				1189CFFE2179792E00E1CE5C /* main.m in Sources */,
 				11A29AF021AAA2F10082AC33 /* YYBlockModel.m in Sources */,
 				1160B4962189CFBF0018A512 /* RACBasicViewController.m in Sources */,
 				1164557E218B2824008C3470 /* RACSignalViewController.m in Sources */,
 				1165613F218C17BB00DA17A6 /* RACCommandViewController.m in Sources */,
 				1126C66821AD8C7700DA5AB3 /* NSObject+YYCalculateModel.m in Sources */,
+				1126C67321AD906100DA5AB3 /* YYResponsiveViewController.m in Sources */,
 				11D0131C219E530600B2ABB2 /* YYRACSignalController.m in Sources */,
+				1126C67721AD911300DA5AB3 /* YYPersonModel.m in Sources */,
 				1125689321AC49C50043A0C5 /* YYChainViewController.m in Sources */,
 				116EB42621894385004C4862 /* YYMainTableViewCell.m in Sources */,
 				1189CFF02179792C00E1CE5C /* YYAppDelegate.m in Sources */,
+				1126C68021AD983B00DA5AB3 /* YYPersonSonModel.m in Sources */,
 				116EB42F21895073004C4862 /* UIColor+Category.m in Sources */,
+				1126C66D21AD8F8E00DA5AB3 /* YYChainAdvancedController.m in Sources */,
 				1125689721AC4D220043A0C5 /* YYCalculateModel.m in Sources */,
 				11645577218B2498008C3470 /* YYModel.m in Sources */,
 			);
