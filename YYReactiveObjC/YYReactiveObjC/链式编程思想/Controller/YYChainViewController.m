@@ -8,6 +8,7 @@
 
 #import "YYChainViewController.h"
 #import "YYCalculateModel.h"
+#import "YYCalculateModel.h"
 #import "NSObject+YYCalculateModel.h"
 
 @interface YYChainViewController ()

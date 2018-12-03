@@ -36,6 +36,8 @@
 		1189CFFE2179792E00E1CE5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1189CFFD2179792E00E1CE5C /* main.m */; };
 		1189D0082179792E00E1CE5C /* YYReactiveObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1189D0072179792E00E1CE5C /* YYReactiveObjCTests.m */; };
 		1189D0132179792E00E1CE5C /* YYReactiveObjCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1189D0122179792E00E1CE5C /* YYReactiveObjCUITests.m */; };
+		119494CA21B5713300B47FCF /* YYFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 119494C921B5713300B47FCF /* YYFunctionViewController.m */; };
+		119494CE21B572BA00B47FCF /* YYCaculatorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 119494CD21B572BA00B47FCF /* YYCaculatorModel.m */; };
 		11A29AEC21AA9FF90082AC33 /* YYBlockBasicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A29AEB21AA9FF90082AC33 /* YYBlockBasicController.m */; };
 		11A29AF021AAA2F10082AC33 /* YYBlockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A29AEF21AAA2F10082AC33 /* YYBlockModel.m */; };
 		11D0131C219E530600B2ABB2 /* YYRACSignalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0131B219E530600B2ABB2 /* YYRACSignalController.m */; };
@@ -117,6 +119,10 @@
 		1189D0122179792E00E1CE5C /* YYReactiveObjCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYReactiveObjCUITests.m; sourceTree = "<group>"; };
 		1189D0142179792E00E1CE5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1189D02321797A7400E1CE5C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		119494C821B5713300B47FCF /* YYFunctionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYFunctionViewController.h; sourceTree = "<group>"; };
+		119494C921B5713300B47FCF /* YYFunctionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYFunctionViewController.m; sourceTree = "<group>"; };
+		119494CC21B572BA00B47FCF /* YYCaculatorModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYCaculatorModel.h; sourceTree = "<group>"; };
+		119494CD21B572BA00B47FCF /* YYCaculatorModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYCaculatorModel.m; sourceTree = "<group>"; };
 		11A29AEA21AA9FF90082AC33 /* YYBlockBasicController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYBlockBasicController.h; sourceTree = "<group>"; };
 		11A29AEB21AA9FF90082AC33 /* YYBlockBasicController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYBlockBasicController.m; sourceTree = "<group>"; };
 		11A29AEE21AAA2F10082AC33 /* YYBlockModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYBlockModel.h; sourceTree = "<group>"; };
@@ -202,12 +208,12 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
-		1126C66921AD8E9000DA5AB3 /* 链式编程进阶 */ = {
+		1126C66921AD8E9000DA5AB3 /* masonry框架分析 */ = {
 			isa = PBXGroup;
 			children = (
 				1126C66A21AD8EA300DA5AB3 /* Controller */,
 			);
-			path = "链式编程进阶";
+			path = "masonry框架分析";
 			sourceTree = "<group>";
 		};
 		1126C66A21AD8EA300DA5AB3 /* Controller */ = {
@@ -409,8 +415,9 @@
 				1189D0212179795F00E1CE5C /* Main */,
 				11A29AE821AA9FC60082AC33 /* Block基础知识 */,
 				1125688F21AC49300043A0C5 /* 链式编程思想 */,
-				1126C66921AD8E9000DA5AB3 /* 链式编程进阶 */,
+				1126C66921AD8E9000DA5AB3 /* masonry框架分析 */,
 				1126C66F21AD900A00DA5AB3 /* 响应式编程思想 */,
+				119494C621B570C500B47FCF /* 函数式编程思想 */,
 				11D01317219E52C900B2ABB2 /* RACSignal */,
 				11F12F6021A8151A00073089 /* RACDisposable */,
 				1160B4932189CF980018A512 /* RACObserve */,
@@ -469,6 +476,33 @@
 				1189D02321797A7400E1CE5C /* PrefixHeader.pch */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		119494C621B570C500B47FCF /* 函数式编程思想 */ = {
+			isa = PBXGroup;
+			children = (
+				119494C721B570D600B47FCF /* Controller */,
+				119494CB21B5726A00B47FCF /* Model */,
+			);
+			path = "函数式编程思想";
+			sourceTree = "<group>";
+		};
+		119494C721B570D600B47FCF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				119494C821B5713300B47FCF /* YYFunctionViewController.h */,
+				119494C921B5713300B47FCF /* YYFunctionViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		119494CB21B5726A00B47FCF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				119494CC21B572BA00B47FCF /* YYCaculatorModel.h */,
+				119494CD21B572BA00B47FCF /* YYCaculatorModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		11A29AE821AA9FC60082AC33 /* Block基础知识 */ = {
@@ -730,8 +764,10 @@
 				1165613F218C17BB00DA17A6 /* RACCommandViewController.m in Sources */,
 				1126C66821AD8C7700DA5AB3 /* NSObject+YYCalculateModel.m in Sources */,
 				1126C67321AD906100DA5AB3 /* YYResponsiveViewController.m in Sources */,
+				119494CE21B572BA00B47FCF /* YYCaculatorModel.m in Sources */,
 				11D0131C219E530600B2ABB2 /* YYRACSignalController.m in Sources */,
 				1126C67721AD911300DA5AB3 /* YYPersonModel.m in Sources */,
+				119494CA21B5713300B47FCF /* YYFunctionViewController.m in Sources */,
 				1125689321AC49C50043A0C5 /* YYChainViewController.m in Sources */,
 				116EB42621894385004C4862 /* YYMainTableViewCell.m in Sources */,
 				1189CFF02179792C00E1CE5C /* YYAppDelegate.m in Sources */,

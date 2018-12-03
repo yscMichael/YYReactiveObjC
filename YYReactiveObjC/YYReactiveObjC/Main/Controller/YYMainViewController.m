@@ -76,7 +76,7 @@
         _dataSoure = [[NSMutableArray alloc]initWithObjects:
                       @"Block基础知识",
                       @"链式编程思想",
-                      @"链式编程思想-进阶",
+                      @"masonry框架分析",
                       @"响应式编程思想",
                       @"RACSignal用法",
                       @"RACObserve用法",
